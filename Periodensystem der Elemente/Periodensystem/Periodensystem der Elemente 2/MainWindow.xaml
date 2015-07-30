@@ -1,0 +1,45 @@
+﻿<Window x:Class="Periodensystem_der_Elemente_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Periodensystem_der_Elemente_2"
+        Title="Periodensystem der Elemente" Height="520" Width="1026" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Icon="/Periodensystem%20der%20Elemente%202;component/Bilder/Icon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23" />
+            <RowDefinition Height="435*" />
+        </Grid.RowDefinitions>        
+        
+        <Menu Height="23" VerticalAlignment="Top">
+            <MenuItem Header="Datei">
+                <MenuItem Command="{x:Static local:Commands.Schließen}"/>
+            </MenuItem>
+            <MenuItem Header="Seiten">
+                <MenuItem Header="Startseite" Click="startseite_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Periodensystem%20der%20Elemente%202;component/Bilder/HomeHS.png" Width="16" Height="16" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="Periodensystem">
+                    <MenuItem Header="...nach System" Click="psenachsystem_Click" />
+                    <MenuItem Header="...nach Name" Click="psenachname_Click"/>
+                    <MenuItem Header="...nach Gruppe" Click="psenachgruppe_Click"/>
+                    <MenuItem Header="...nach Symbol" Click="psenachsymbol_Click"/>
+                    <MenuItem Header="...nach Ordnungszahl" Click="psenachordnungszahl_Click" />
+                </MenuItem>
+                <MenuItem Header="Übungen">
+                    <MenuItem Header="...nach System" Click="übungnachsystem_Click" />
+                    <MenuItem Header="...nach Name" Click="übungnachname_Click" />
+                    <MenuItem Header="...nach Gruppe" Click="übungnachgruppe_Click" />
+                    <MenuItem Header="...nach Symbol" Click="übungnachsymbol_Click" />
+                    <MenuItem Header="...nach Ordnungszahl" Click="übungnachordnungszahl_Click" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Extras">
+                <MenuItem Command="{x:Static local:Commands.About}" />
+                <MenuItem Command="Help"/>
+            </MenuItem>
+        </Menu>
+        <Frame Name="frame1" Grid.Row="1" NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>

@@ -1,0 +1,169 @@
+﻿<Page x:Class="Periodensystem_der_Elemente_2.Pages.Startseite"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      Height="453" Width="1021" Title="Startseite">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="{x:Type Hyperlink}">
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="true">
+                        <Setter Property="Foreground">
+                            <Setter.Value>
+                                <SolidColorBrush Color="#7F0000"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+                <Setter Property="Foreground" Value="#FF267F00"/>
+            </Style>
+            <Style TargetType="{x:Type TabItem}">
+                <Setter Property="FontFamily" Value="Segoe Script"/>
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Grid SnapsToDevicePixels="True">
+                                <Border BorderThickness="1,0,1,1" Padding="{TemplateBinding Control.Padding}" BorderBrush="#FFF0F0F0" Background="White" Name="Bd" CornerRadius="2,0,2,0">
+                                    <ContentPresenter RecognizesAccessKey="True" Content="{TemplateBinding HeaderedContentControl.Header}" ContentTemplate="{TemplateBinding HeaderedContentControl.HeaderTemplate}" ContentStringFormat="{TemplateBinding HeaderedContentControl.HeaderStringFormat}" ContentSource="Header" Name="Content" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                                </Border>
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Panel.Background" TargetName="Bd">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="#FFF0F0F0"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <Trigger Property="Selector.IsSelected" Value="true">
+                                    <Setter Property="Panel.ZIndex" Value="1"/>
+                                    <Setter Property="Panel.Background" TargetName="Bd">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="White"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <Trigger Property="Selector.IsSelected" Value="true">
+                                    <Setter Property="FrameworkElement.Margin">
+                                        <Setter.Value>
+                                            <Thickness>-2,-2,-2,-1</Thickness>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter Property="FrameworkElement.Margin" TargetName="Content">
+                                        <Setter.Value>
+                                            <Thickness>0,0,0,1</Thickness>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <Trigger Property="Selector.IsSelected" Value="false">
+                                    <Setter Property="Border.Background" TargetName="Bd">
+                                        <Setter.Value>
+                                            <LinearGradientBrush EndPoint="0,1" Opacity="0.4">
+                                                <GradientStop Color="White" Offset="0"/>
+                                                <GradientStop Color="#FFA02E" Offset="1"/>
+                                            </LinearGradientBrush> 
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <MultiTrigger>
+                                    <MultiTrigger.Conditions>
+                                        <Condition Property="Selector.IsSelected" Value="false"/>
+                                        <Condition Property="UIElement.IsMouseOver" Value="true"/>
+                                    </MultiTrigger.Conditions>
+                                    <Setter Property="Border.Background" TargetName="Bd">
+                                        <Setter.Value>
+                                            <LinearGradientBrush EndPoint="0,1" Opacity="0.4">
+                                                <GradientStop Color="White" Offset="0"/>
+                                                <GradientStop Color="#7F0000" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Border.Cursor" TargetName="Bd" Value="Hand"/>
+                                </MultiTrigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsSelected" Value="false">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <SolidColorBrush Color="#FFF0F0F0"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                    <MultiTrigger>                        
+                        <MultiTrigger.Conditions>
+                            <Condition Property="IsMouseOver" Value="true"/>
+                            <Condition Property="IsSelected" Value="false"/>
+                        </MultiTrigger.Conditions>
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <SolidColorBrush Color="#FFF0F0F0"/>
+                            </Setter.Value>
+                        </Setter>
+                    </MultiTrigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="353*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Periodensystem der Elemente" FontFamily="Segoe Script" FontSize="63" Foreground="Green" />
+        <TabControl Grid.Row="1" BorderBrush="{x:Null}">
+            <TabItem Header="Periodensystem">
+                <Grid>
+                    <TextBlock Width="1011">
+                        <Hyperlink Click="Periodensystem_Click">
+                            Periodensystem nach System
+                        </Hyperlink>
+                        <LineBreak/>
+                        <Hyperlink Click="Periodensystemnachname_Click">
+                            Periodensystem nach Name
+                        </Hyperlink>  
+                        <LineBreak/>
+                        <Hyperlink Click="Periodensystemnachgruppe_Click">
+                            Periodensystem nach Gruppe
+                        </Hyperlink>
+                        <LineBreak/>
+                        <Hyperlink Click="Periodensystemnachsymbol_Click">
+                            Periodensystem nach Symbol
+                        </Hyperlink>                    
+                        <LineBreak/>
+                        <Hyperlink Click="Periodensystemnachordnungszahl_Click">
+                            Periodensystem nach Ordnungszahl
+                        </Hyperlink>
+                    </TextBlock>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Übungen">
+                <Grid>
+                    <TextBlock Width="1011">
+                        <Hyperlink Click="Übung_Click">
+                            Übung nach System
+                        </Hyperlink>
+                        <LineBreak/>
+                        <Hyperlink Click="Übungnachname_Click">
+                            Übung nach Name
+                        </Hyperlink> 
+                        <LineBreak/>
+                        <Hyperlink Click="Übungnachgruppe_Click">
+                            Übung nach Gruppe
+                        </Hyperlink>
+                        <LineBreak/>
+                        <Hyperlink Click="Übungnachsymbol_Click">
+                            Übung nach Symbol
+                        </Hyperlink>                    
+                        <LineBreak/>
+                        <Hyperlink Click="Übungnachordnungszahl_Click">
+                            Übung nach Ordnungszahl
+                        </Hyperlink>
+                    </TextBlock>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

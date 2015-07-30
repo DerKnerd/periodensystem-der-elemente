@@ -1,0 +1,55 @@
+﻿<Window x:Class="Periodensystem_der_Elemente_2.Pages.Detailssymbol"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Details" Height="257" Width="392" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" WindowStyle="None" Loaded="Window_Loaded" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="128" />
+            <RowDefinition Height="16" />
+            <RowDefinition Height="23" />
+        </Grid.RowDefinitions>
+        <Button Content="Schließen" Grid.Row="3" Height="23" HorizontalAlignment="Left" Name="button1" VerticalAlignment="Bottom" Width="75" Margin="295,0,0,0" Click="button1_Click" />
+        <TextBlock Height="128" Grid.Row="1" Width="128" HorizontalAlignment="Left" Name="elementsymbol" Text="" VerticalAlignment="Top" FontWeight="Normal" FontSize="86" TextAlignment="Center" />
+        <TextBlock Height="50" HorizontalAlignment="Left" Name="elementname" Text="" VerticalAlignment="Top" Width="370" FontSize="34" />
+        <Grid Grid.Row="1" Height="128" HorizontalAlignment="Left" Margin="128,0,0,0" Name="grid1" VerticalAlignment="Top" Width="242">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="131" />
+                <ColumnDefinition Width="61" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="0*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="21.33333333333333333333333" />
+                <RowDefinition Height="21.33333333333333333333333" />
+                <RowDefinition Height="21.33333333333333333333333" />
+                <RowDefinition Height="21.33333333333333333333333" />
+                <RowDefinition Height="21.33333333333333333333333" />
+                <RowDefinition Height="21.33333333333333333333333" />
+            </Grid.RowDefinitions>
+            <Line X1="0" X2="242" StrokeThickness="3" Grid.Row="0" Grid.ColumnSpan="4" Fill="Red" Stroke="Black" Name="line1" Y1="18" Y2="18" />
+            <TextBlock Height="21" HorizontalAlignment="Left" Name="eigenschaft" Text="Eigenschaft" VerticalAlignment="Top" Width="131" FontWeight="Bold" />
+            <TextBlock Grid.Column="1" Height="21" HorizontalAlignment="Left" Name="wert" Text="Wert" VerticalAlignment="Top" Width="61" FontWeight="Bold" TextAlignment="Right" />
+            <TextBlock Grid.Column="2" Height="21" HorizontalAlignment="Left" Name="einheit" Text="Einheit" VerticalAlignment="Top" Width="50" FontWeight="Bold" TextAlignment="Right" />
+            <TextBlock Grid.Row="1" Height="21" HorizontalAlignment="Left" Name="textBlock1" Text="Ordnungszahl:" VerticalAlignment="Top" Width="131" />
+            <TextBlock Grid.Column="1" Grid.Row="1" Height="21" HorizontalAlignment="Left" Name="ordnungszahl" Text="" VerticalAlignment="Top" Width="61" TextAlignment="Right" />
+            <TextBlock Grid.Row="2" Height="21" HorizontalAlignment="Left" Name="textBlock2" Text="Massezahl/Atommasse:" VerticalAlignment="Top" Width="131" />
+            <TextBlock Grid.Column="1" Grid.Row="2" Height="21" HorizontalAlignment="Left" Name="massezahl" Text="" VerticalAlignment="Top" Width="61" TextAlignment="Right" />
+            <TextBlock Grid.Column="2" Grid.Row="2" Height="21" HorizontalAlignment="Left" Name="massezahleinheit" Text="u" VerticalAlignment="Top" Width="50" />
+            <TextBlock Grid.Row="3" Height="21" HorizontalAlignment="Left" Name="textBlock3" Text="Dichte:" VerticalAlignment="Top" Width="131" />
+            <TextBlock Grid.Column="1" Grid.Row="3" Height="21" HorizontalAlignment="Left" Name="dichte" Text="" VerticalAlignment="Top" Width="61" TextAlignment="Right" />
+            <TextBlock Grid.Column="2" Grid.Row="3" Height="21" HorizontalAlignment="Left" Name="dichteeinheit" Text="g/cm³" VerticalAlignment="Top" Width="50" />
+            <TextBlock Grid.Row="4" Height="21" HorizontalAlignment="Left" Name="textBlock4" Text="Schmelzpunkt:" VerticalAlignment="Top" Width="131" />
+            <TextBlock Grid.Column="1" Grid.Row="4" Height="21" HorizontalAlignment="Left" Name="schemlzpkt" Text="" VerticalAlignment="Top" Width="61" TextAlignment="Right" />
+            <TextBlock Grid.Column="2" Grid.Row="4" Height="21" HorizontalAlignment="Left" Name="schemlzpkteinheit" Text="°C" VerticalAlignment="Top" Width="50" />
+            <TextBlock Grid.Row="5" Height="21" HorizontalAlignment="Left" Name="textBlock5" Text="Siedepunkt:" VerticalAlignment="Top" Width="131" />
+            <TextBlock Grid.Column="1" Grid.Row="5" Height="21" HorizontalAlignment="Left" Name="siedepkt" Text="" VerticalAlignment="Top" Width="61" TextAlignment="Right" />
+            <TextBlock Height="21" HorizontalAlignment="Left" Name="siedepkteinheit" Text="°C" VerticalAlignment="Top" Width="50" Grid.Column="2" Grid.Row="5" />
+        </Grid>
+        <CheckBox Content="Giftig" Grid.Row="2" Height="16" HorizontalAlignment="Left" Name="giftig" VerticalAlignment="Top" IsEnabled="False" />
+        <CheckBox Content="Radioaktiv" Grid.Row="2" Height="16" HorizontalAlignment="Left" Margin="60,0,0,0" Name="radioaktiv" VerticalAlignment="Top" IsEnabled="False" />
+        <CheckBox Content="Ätzend" Grid.Row="2" Height="16" HorizontalAlignment="Left" Margin="138,0,0,0" Name="ätzend" VerticalAlignment="Top" IsEnabled="False" />
+        <CheckBox Content="Entzündlich" Grid.Row="2" Height="16" HorizontalAlignment="Left" Margin="198,0,0,0" Name="entzündlich" VerticalAlignment="Top" IsEnabled="False" />
+        <CheckBox Content="Reizend" Grid.Row="2" Height="16" HorizontalAlignment="Left" Margin="282,0,0,0" Name="reizend" VerticalAlignment="Top" IsEnabled="False" />
+    </Grid>
+</Window>

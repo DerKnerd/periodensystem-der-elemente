@@ -1,0 +1,799 @@
+﻿<Page x:Class="Periodensystem_der_Elemente.Übung"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Übung" Height="465" Width="1021" Loaded="Page_Loaded">
+    <StackPanel>
+        <Grid Height="286" Width="1021">
+            <Grid.Resources>
+                <ResourceDictionary Source="Elemente.xaml"/>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Header-->
+            <!--Oberste reihe-->
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="11" Grid.ColumnSpan="2" FontWeight="Bold">
+            <Run>
+                Haupt-gruppen
+            </Run>
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="15" Grid.Column="26" Grid.ColumnSpan="6" FontWeight="Bold">
+            <Run>
+                Hauptgruppen
+            </Run>
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="11" Grid.Row="2" Grid.Column="2" FontWeight="Bold">
+            <Run>
+                NG
+            </Run>
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="16" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="14" FontWeight="Bold">
+            <Run>
+                Lanthanoide und Actinoide
+            </Run>
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="16" Grid.Row="2" Grid.Column="16" Grid.ColumnSpan="10" FontWeight="Bold">
+            <Run>
+                Nebengruppen
+            </Run>
+            </TextBlock>
+            <!--Zahlenreihe-->
+            <TextBlock Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                I
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                II
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="2" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                III
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="17" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                IV
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="18" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                V
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="19" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                VI
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="20" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                VII
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="21" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                VIII
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="22" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                VIII
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="23" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                VIII
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="24" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                I
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="25" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Run FontSize="19" FontWeight="Bold">
+                II
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                III
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="27" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                IV
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="28" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                V
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                VI
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="30" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                VII
+            </Run>
+            </TextBlock>
+            <TextBlock Grid.Column="31" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="1">
+            <Run FontSize="19" FontWeight="Bold">
+                VIII
+            </Run>
+            </TextBlock>
+            <!--erste Periode-->
+            <TextBlock Background="#FFD800" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="2">
+                <Hyperlink FontSize="19" Foreground="Black" FontWeight="Bold" Click="wasserstoff_click">
+                    H
+                </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="31" Background="#0026FF" TextAlignment="Center" Grid.Row="2">
+            <Hyperlink Click="helium_click" FontSize="19" Foreground="White" FontWeight="Bold">
+                He
+            </Hyperlink>
+            </TextBlock>
+            <!--zweite Periode-->
+            <TextBlock Background="#00137F" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="3">
+            <Hyperlink Click="lithium_click" FontSize="19" Foreground="White" FontWeight="Bold">
+                Li
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="31" Background="#0026FF" TextAlignment="Center" Grid.Row="3">
+            <Hyperlink Click="neon_click" FontSize="19" Foreground="White" FontWeight="Bold">
+                Ne
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Background="#7F0000" TextAlignment="Center" Grid.Row="3">
+            <Hyperlink Click="beryllium_click" FontSize="19" FontWeight="Bold" Foreground="White">
+                Be
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" TextAlignment="Center" Grid.Row="3">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Click="bor_click"  Foreground="Black" FontSize="19" FontWeight="Bold">
+                B
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="27" Background="#4CFF00" Foreground="Black" TextWrapping="Wrap" TextBlock.TextAlignment="Center" Grid.Row="3">
+            <Hyperlink Click="kohlenstoff_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                C
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="28" Background="#FFD800" Foreground="Black" TextWrapping="Wrap" TextBlock.TextAlignment="Center" Grid.Row="3">
+            <Hyperlink Click="stickstoff_click" FontSize="19" Foreground="Black" FontWeight="Bold">
+                N
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Background="#FFD800" TextWrapping="Wrap" TextBlock.TextAlignment="Center" Grid.Row="3">
+            <Hyperlink Click="sauerstoff_click" FontSize="19" FontWeight="Bold" Foreground="Black">
+                O
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="30" Background="#808080" TextWrapping="Wrap" TextBlock.TextAlignment="Center" Grid.Row="3">
+            <Hyperlink Click="fluor_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                F
+            </Hyperlink>
+            </TextBlock>
+            <!--dritte Periode-->
+            <TextBlock Background="#00137F" Foreground="White" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4">
+            <Hyperlink Click="natrium_click" Foreground="White" FontSize="19" FontWeight="Bold">
+                Na
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="31" Background="#0026FF" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4">
+            <Hyperlink Foreground="White" Click="argon_click" FontSize="19" FontWeight="Bold">
+                Ar
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Background="#7F0000" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4" Height="31.778" VerticalAlignment="Top">
+            <Hyperlink Click="magnesium_click" FontSize="19" FontWeight="Bold" Foreground="White">
+                Mg
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Background="#FF0000" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4">
+            <Hyperlink Click="aluminium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Al
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Click="silicium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Si
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="28" Background="#4CFF00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4">
+            <Hyperlink Foreground="Black" Click="phosphor_click" FontSize="19" FontWeight="Bold">
+                P
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Background="#4CFF00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4">
+            <Hyperlink Foreground="Black" Click="schwefel_click" FontSize="19" FontWeight="Bold">
+                S
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Background="#808080" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Foreground="Black" Click="chlor_click" FontSize="19" FontWeight="Bold">
+                Cl
+            </Hyperlink>
+            </TextBlock>
+            <!--vierte Periode-->
+            <TextBlock Background="#00137F" Foreground="White" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Foreground="White" Click="kalium_click" FontSize="19" FontWeight="Bold">
+                K
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="31" Background="#0026FF" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Foreground="White" Click="krypton_click" FontSize="19" FontWeight="Bold">
+                Kr
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Background="#7F0000" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Click="calcium_click" FontSize="19" FontWeight="Bold" Foreground="White">
+                Ca
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Background="#FF0000" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Click="gallium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Ga
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Click="germanium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Ge
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="28" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Foreground="Black" Click="arsen_click" FontSize="19" FontWeight="Bold">
+                As
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Foreground="Black" Click="selen_click" FontSize="19" FontWeight="Bold">
+                Se
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Background="#808080" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Foreground="Black" Click="brom_click" FontSize="19" FontWeight="Bold">
+                Br
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="2" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Click="scandium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Sc
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="17" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Foreground="Black" Click="titan_click" FontSize="19" FontWeight="Bold">
+                Ti
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="18" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Foreground="Black" Click="vanadium_click" FontSize="19" FontWeight="Bold">
+                V
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="18" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Click="chrom_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Cr
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="20" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Click="mangan_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Mn
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="21" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5" Height="31.778" VerticalAlignment="Top">
+            <Hyperlink Click="eisen_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Fe
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="21" Background="#FF6A00" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Click="cobalt_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Co
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="23" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Click="nickel_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Ni
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="24" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Foreground="Black" Click="kupfer_click" FontSize="19" FontWeight="Bold">
+                Cu
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="25" Background="#FF6A00" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="5">
+            <Hyperlink Foreground="Black" Click="zink_click" FontSize="19" FontWeight="Bold">
+                Zn
+            </Hyperlink>
+            </TextBlock>
+            <!--fünfte Periode-->
+            <TextBlock Background="#00137F" Foreground="White" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Click="rubidium_click" Foreground="White" FontSize="19" FontWeight="Bold">
+                Rb
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="31" Background="#0026FF" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Foreground="White" Click="xenon_click" FontSize="19" FontWeight="Bold">
+                Xe
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Background="#7F0000" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Click="strontium_click" FontSize="19" FontWeight="Bold" Foreground="White">
+                Sr
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Background="#FF0000" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6" Height="31.778" VerticalAlignment="Top">
+            <Hyperlink Click="indium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                In
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Background="#FF0000" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2" Margin="31.906,0,0,0" Height="31.778" VerticalAlignment="Top">
+            <Hyperlink Foreground="Black" Click="zinn_click" FontSize="19" FontWeight="Bold">
+                Sn
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="28" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Foreground="Black" Click="antimon_click" FontSize="19" FontWeight="Bold">
+                Sb
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Foreground="Black" Click="tellur_click" FontSize="19" FontWeight="Bold">
+                Te
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Background="#808080" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Foreground="Black" Click="iod_click" FontSize="19" FontWeight="Bold">
+                I
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="2" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Click="yttrium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Y
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="17" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Click="zirconium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Zr
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="18" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Foreground="Black" Click="niob_click" FontSize="19" FontWeight="Bold">
+                Nb
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="18" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Click="molybdän_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Mo
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="20" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Click="technetium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Tc
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="21" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Click="ruthenium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Ru
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="21" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Click="rhenium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Rh
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="23" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Click="palladium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Pd
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="24" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Foreground="Black" Click="silber_click" FontSize="19" FontWeight="Bold">
+                Ag
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="25" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="6">
+            <Hyperlink Foreground="Black" Click="cadmium_click" FontSize="19" FontWeight="Bold">
+                Cd
+            </Hyperlink>
+            </TextBlock>
+            <!--sechste Periode-->
+            <TextBlock Background="#00137F" Foreground="White" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="caesium_click" Foreground="White" FontSize="19" FontWeight="Bold">
+                Cs
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="31" Background="#0026FF" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="White" Click="radon_click" FontSize="19" FontWeight="Bold">
+                Rn
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Background="#7F0000" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="barium_click" FontSize="19" Foreground="White" FontWeight="Bold">
+                Ba
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Background="#FF0000" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="thallium_click" FontSize="19" FontWeight="Bold">
+                Tl
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="26" Background="#FF0000" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Foreground="Black" Click="blei_click" FontSize="19" FontWeight="Bold">
+                Pb
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="28" Background="#FF0000" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="bismut_click"  FontSize="19" FontWeight="Bold">
+                Bi
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF21"/>
+                    <GradientStop Offset="1" Color="#FF0000"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <Hyperlink Foreground="Black" Click="polonium_click" FontSize="19" FontWeight="Bold">
+                Po
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="29" Background="#808080" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Foreground="Black" Click="astat_click" FontSize="19" FontWeight="Bold">
+                At
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="2" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="lanthan_click" FontSize="19" FontWeight="Bold">
+                La
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="17" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="hafnium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Hf
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="18" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="tantal_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Ta
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="18" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Click="wolfram_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                W
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="20" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="rhenium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Re
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="21" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="osmium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Os
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="21" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2" Margin="31.906,0,0,0">
+            <Hyperlink Foreground="Black" Click="iridium_click" FontSize="19" FontWeight="Bold">
+                Ir
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="23" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="platin_click" FontSize="19" FontWeight="Bold">
+                Pt
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="24" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="gold_click" FontSize="19" FontWeight="Bold">
+                Au
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="25" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="quecksilber_click" FontSize="19" FontWeight="Bold">
+                Hg
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="3" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="cer_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Ce
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="4" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="praseodym_click" FontSize="19" FontWeight="Bold">
+                Pr
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="5" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="neodym_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Nd
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="6" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="promethium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Pm
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="7" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="samarium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Sm
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="8" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="europium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Eu
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="9" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="gadolium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Gd
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="10" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="terbium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Tb
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="11" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="dysprosium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Dy
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="12" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="holmium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Ho
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="13" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="erbium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Er
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="14" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Click="thulium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Tm
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="15" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="ytterbium_click" FontSize="19" FontWeight="Bold">
+                Yb
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="16" Background="#0094FF" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="7">
+            <Hyperlink Foreground="Black" Click="lutetium_click" FontSize="19" FontWeight="Bold">
+                Lu
+            </Hyperlink>
+            </TextBlock>
+            <!--siebte Periode-->
+            <TextBlock Background="#00137F" Foreground="White" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="francium_click" Foreground="White" FontSize="19" FontWeight="Bold">
+                Fr
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Background="#7F0000" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8" Grid.Column="1">
+            <Hyperlink Click="radium_click" FontSize="19" Foreground="White" FontWeight="Bold">
+                Ra
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="2" Background="#FF6A00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Foreground="Black" Click="actinium_click" FontSize="19" FontWeight="Bold">
+                Ac
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="3" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="thorium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Th
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="4" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="protactinium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Pa
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="5" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="uran_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                U
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="6" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="neptunium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Np
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="7" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="plutonium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Pu
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="8" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="americum_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Am
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="9" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="curium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Cm
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Column="10" Background="#FF267F00" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" Grid.Row="8">
+            <Hyperlink Click="berkelium_click" Foreground="Black" FontSize="19" FontWeight="Bold">
+                Bk
+            </Hyperlink>
+            </TextBlock>
+            <Grid Grid.Column="7" Grid.ColumnSpan="8" Grid.RowSpan="5" Height="160" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256">
+                <Grid.Background>
+                    <ImageBrush x:Name="elementsymbolfarbe" />
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock FontSize="86" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="5" Height="128" HorizontalAlignment="Left" Name="elementsymbol" Text="" TextAlignment="Left" VerticalAlignment="Top" Width="128" Margin="0,16,0,0" />
+                <TextBlock FontSize="20" Grid.Row="1" Height="32" HorizontalAlignment="Left" Name="Atommasse" Text="" TextAlignment="Right" VerticalAlignment="Top" Width="32" />
+                <TextBlock FontSize="20" Grid.Row="3" Height="32" HorizontalAlignment="Left" Name="ordnungszahl" Text="" TextAlignment="Right" VerticalAlignment="Top" Width="32" />
+                <TextBlock Grid.ColumnSpan="8" Height="32" HorizontalAlignment="Left" Name="Elementname" Text="" VerticalAlignment="Top" Width="256" FontSize="22" TextAlignment="Center" FontWeight="Bold" />
+                <TextBlock Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="1" Height="32" HorizontalAlignment="Left" Name="Dichte" Text="Dichte:" VerticalAlignment="Top" Width="96" />
+                <TextBlock Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="2" Height="32" HorizontalAlignment="Left" Name="Schmelzpunkt" Text="Schmelzpunkt:" VerticalAlignment="Top" Width="96" />
+                <TextBlock Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="3" Height="32" HorizontalAlignment="Left" Name="Siedepunkt" Text="Siedepunkt:" VerticalAlignment="Top" Width="96" />
+            </Grid>
+        </Grid>
+        <StackPanel Height="156" Orientation="Horizontal">
+            <StackPanel>
+                <Label Height="26" Width="Auto" Target="{Binding ElementName=ename}">_Name</Label>
+                <Label Height="26" Width="Auto" Target="{Binding ElementName=ordnungsahl}">_Ordnungszahl</Label>
+                <Label Height="26" Width="Auto" Target="{Binding ElementName=masse}" >_Atommasse</Label>
+                <Label Height="26" Width="Auto" Target="{Binding ElementName=dichte}">_Dichte</Label>
+                <Label Height="26" Width="Auto" Target="{Binding ElementName=schmelzpunkt}">_Schmelzpunkt</Label>
+                <Label Height="26" Width="Auto" Target="{Binding ElementName=siedepunkt}">S_iedepunkt</Label>
+            </StackPanel>
+            <StackPanel Name="textboxstack">
+                <TextBox Height="26" Name="ename" Width="120" IsReadOnly="True" AutoWordSelection="False" AcceptsTab="False" />
+                <TextBox MaxLength="3"  Height="26" Name="ordnungzahl" Width="120" IsReadOnly="True" AutoWordSelection="False" AcceptsTab="False" />
+                <TextBox Height="26" Name="masse" Width="120" IsReadOnly="True" AutoWordSelection="False" AcceptsTab="False" />
+                <TextBox Height="26" Name="dichte" Width="120" IsReadOnly="True" AutoWordSelection="False" AcceptsTab="False" />
+                <TextBox Height="26" Name="schmelzpunkt" Width="120" IsReadOnly="True" AutoWordSelection="False" AcceptsTab="False" />
+                <TextBox Height="26" Name="siedepunkt" Width="120" IsReadOnly="True" AutoWordSelection="False" AcceptsTab="False" />
+            </StackPanel>
+            <StackPanel Width="26">
+                <Image Name="imgname" Width="26" Height="26"/>
+                <Image Name="imgordnungszahl" Width="26" Height="26"/>
+                <Image Name="imgmasse" Width="26" Height="26"/>
+                <Image Name="imgdichte" Width="26" Height="26"/>
+                <Image Name="imgschmelzpunkt" Width="26" Height="26"/>
+                <Image Name="imgsiedepunkt" Width="26" Height="26"/>
+            </StackPanel>
+            <Button Height="23.331" Name="btnh" Width="75.548" VerticalAlignment="Bottom" Click="überprüfen_Click" IsDefault="True">Überprüfen</Button>
+            <TextBlock TextWrapping="Wrap" FontSize="50" Height="Auto" FontWeight="Bold" Visibility="Hidden" TextAlignment="Center" Name="textBlock1" Width="677.71">
+                <Run Name="versuche">
+                    
+                </Run>
+            </TextBlock>
+        </StackPanel>
+        <Grid VerticalAlignment="Bottom" Height="23">
+            <StatusBar Height="23" Name="statusBar1" VerticalAlignment="Bottom">
+                <StatusBarItem Name="SBIversuche">
+                    Bisherige Versuche: 0
+                </StatusBarItem>
+                <Separator/>
+                <StatusBarItem Name="SBIrichtig">
+                    Bisher richtig: 0
+                </StatusBarItem>                
+                <Separator Name="seperator1"/>
+                
+                <RadioButton Checked="sbiw_Checked" Name="SBIweiß" Content="weißer Phosphor" Visibility="Collapsed" />
+                <RadioButton Checked="sbir_Checked" Name="SBIrot" Content="roter Phosphor" Visibility="Collapsed" />
+                <RadioButton Checked="sbis_Checked" Name="SBIschwarz" Content="schwarzer Phosphor" Visibility="Collapsed" />
+                
+                <RadioButton Checked="sbim_Checked" Name="SBImono" Content="monokliner Schwefel" Visibility="Collapsed" />
+                <RadioButton Checked="sbirh_Checked" Name="SBIromb" Content="rhombischer Schwefel" Visibility="Collapsed" />
+                
+                <RadioButton Checked="sbid_Checked" Name="SBIdiamant" Content="Diamanten" Visibility="Collapsed" />
+                <RadioButton Checked="sbig_Checked" Name="SBIgraphit" Content="Graphit" Visibility="Collapsed" />
+                <StatusBarItem HorizontalContentAlignment="Right" Name="zeit" />
+            </StatusBar>
+        </Grid>
+    </StackPanel>
+</Page>

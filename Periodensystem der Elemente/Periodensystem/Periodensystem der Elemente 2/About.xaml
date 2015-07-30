@@ -1,0 +1,32 @@
+﻿<Window x:Class="Periodensystem_der_Elemente_2.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="208" Width="401" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="148" />
+            <ColumnDefinition Width="308*" />
+        </Grid.ColumnDefinitions>
+        <Image Name="Logo" StretchDirection="Both" />
+        <StackPanel Grid.Column="1" Height="169" VerticalAlignment="Bottom">
+            <Label Name="ProductName" Height="28" VerticalAlignment="Top" />
+            <Label Name="Version" Height="28" VerticalAlignment="Top" />
+            <Label Name="Copyright" Height="28" VerticalAlignment="Top" />
+            <Label Name="CompanyName" Height="28" VerticalAlignment="Top" />
+            <Grid Height="58" VerticalAlignment="Top">
+                <Button VerticalAlignment="Top" Height="23" Name="button1" Width="75" HorizontalAlignment="Left" Click="button1_Click" Style="{x:Null}" Margin="0,33,0,0">_OK</Button>
+                <TextBlock Height="35" HorizontalAlignment="Left" Name="textBlock1" VerticalAlignment="Top" Width="231">
+                    <Run>Alle Werte und Informationen zu den</Run> 
+                    <LineBreak/>
+                    <Run>Elementen sind von</Run>
+                    <Hyperlink NavigateUri="http://de.wikipedia.org">
+                        <Hyperlink.ToolTip>
+                            <TextBlock Text="Gehe zu: wikipedia.org"/>
+                        </Hyperlink.ToolTip>
+                        de.wikipedia.org
+                    </Hyperlink>
+                </TextBlock>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

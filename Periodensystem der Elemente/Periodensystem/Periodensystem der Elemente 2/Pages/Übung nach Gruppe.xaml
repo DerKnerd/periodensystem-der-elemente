@@ -1,0 +1,136 @@
+﻿<Page x:Class="Periodensystem_der_Elemente_2.Pages.Übung_nach_Gruppe"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Periodensystem_der_Elemente_2"
+      mc:Ignorable="d" Height="453" Width="1021" Title="Übung nach Gruppe" Loaded="Page_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="52*" />
+            <RowDefinition Height="401*" />
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320*" />
+            <ColumnDefinition Width="301*" />
+            <ColumnDefinition Width="400*" />
+        </Grid.ColumnDefinitions>
+        <ListBox Name="listBox1" FontSize="18" Grid.Row="1" BorderBrush="{x:Null}" Background="{x:Null}">
+            <ListBoxItem Content="1. Hauptgruppe" Selected="erstehg_Selected" />
+            <ListBoxItem Content="2. Hauptgruppe" Selected="zweitehg_Selected" />
+            <Separator/>
+            <ListBoxItem Content="3. Nebengruppe" Selected="dritteng_Selected" />
+            <Separator/>
+            <ListBoxItem Content="Lanthanoide" Selected="lanthanoide_Selected" />
+            <ListBoxItem Content="Actinoide" Selected="actinoide_Selected" />
+            <Separator/>
+            <ListBoxItem Content="4. Nebengruppe" Selected="vierteng_Selected" />
+            <ListBoxItem Content="5. Nebengruppe" Selected="fünfteng_Selected" />
+            <ListBoxItem Content="6. Nebengruppe" Selected="sechsteng_Selected" />
+            <ListBoxItem Content="7. Nebengruppe" Selected="siebteng_Selected" />
+            <ListBoxItem Content="8. Nebengruppe" Selected="achteng_Selected" />
+            <ListBoxItem Content="1. Nebengruppe" Selected="ersteng_Selected" />
+            <ListBoxItem Content="2. Nebengruppe" Selected="zweiteng_Selected" />
+            <Separator/>
+            <ListBoxItem Content="3. Hauptgruppe" Selected="drittehg_Selected" />
+            <ListBoxItem Content="5. Hauptgruppe" Selected="fünftehg_Selected" />
+            <ListBoxItem Content="6. Hauptgruppe" Selected="sechstehg_Selected" />
+            <ListBoxItem Content="7. Hauptgruppe" Selected="siebtehg_Selected" />
+            <ListBoxItem Content="8. Hauptgruppe" Selected="achtehg_Selected" />
+        </ListBox>
+        <ListBox Name="listBox2" FontSize="18" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Background="{x:Null}" SelectionChanged="listBox2_SelectionChanged" Margin="10,0,0,0" />
+        <GridSplitter Grid.Column="1" Height="431" HorizontalAlignment="Left" Name="gridSplitter1" VerticalAlignment="Top" Width="10" ShowsPreview="True" IsEnabled="False" Grid.RowSpan="2" />
+        <GridSplitter Grid.Column="2" Height="431" HorizontalAlignment="Left" Name="gridSplitter2" VerticalAlignment="Top" Width="10" ResizeBehavior="PreviousAndCurrent" ShowsPreview="True" IsEnabled="False" Grid.RowSpan="2" />
+        <TextBlock Height="52" HorizontalAlignment="Left" Name="textBlock1" Text="Gruppe" VerticalAlignment="Top" Width="320" FontSize="35" FontFamily="Tahoma" />
+        <TextBlock Grid.Column="1" Height="52" HorizontalAlignment="Left" Margin="10,0,0,0" Name="textBlock2" Text="Element" VerticalAlignment="Top" Width="348" FontSize="35" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+        <TextBlock Grid.Column="2" Height="52" HorizontalAlignment="Left" Margin="81,0,0,0" Name="textBlock3" Text="Eigenschaft" VerticalAlignment="Top" Width="332" FontSize="35" FontFamily="Tahoma" Grid.RowSpan="2" />
+        <StatusBar Grid.Row="6" Height="23" Name="statusBar1" VerticalAlignment="Top" Grid.ColumnSpan="7">
+            <StatusBarItem Content="Bisherige Versuche:" />
+            <StatusBarItem Name="SBIVersuche" />
+            <StatusBarItem Name="SBIRichtig" Content="Bisher richtig:" />
+            <StatusBarItem Name="SBIRichtige" />
+        </StatusBar>
+        <Grid Margin="10,0,0,0" Grid.Column="2" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="77" />
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="169" />
+                <ColumnDefinition Width="24" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24*" />
+                <RowDefinition Height="24*" />
+                <RowDefinition Height="24*" />
+                <RowDefinition Height="24*" />
+                <RowDefinition Height="24*" />
+                <RowDefinition Height="24*" />
+                <RowDefinition Height="94*" />
+            </Grid.RowDefinitions>
+            <TextBlock Height="23" HorizontalAlignment="Left" Text="Symbol:" VerticalAlignment="Top" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Text="Ordnungszahl:" VerticalAlignment="Top" Grid.Row="1" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Text="Massezahl:" VerticalAlignment="Top" Grid.Row="2" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Text="Dichte:" VerticalAlignment="Top" Grid.Row="3" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Text="Schmelzpunkt:" VerticalAlignment="Top" Grid.Row="4" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Text="Siedepunkt:" VerticalAlignment="Top" Grid.Row="5" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="tbelementsymbol" VerticalAlignment="Top" Width="120" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="tbordnungszahl" VerticalAlignment="Top" Width="120" Grid.Row="1" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="tbmassezahl" VerticalAlignment="Top" Width="120" Grid.Row="2" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="tbdichte" VerticalAlignment="Top" Width="120" Grid.Row="3" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="tbschmelzpkt" VerticalAlignment="Top" Width="120" Grid.Row="4" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="tbsiedepkt" VerticalAlignment="Top" Width="120" Grid.Row="5" />
+            <ComboBox Grid.Column="2" Grid.Row="2" Height="23" HorizontalAlignment="Left" Name="einheitmassezahl" VerticalAlignment="Top" Width="169" IsEditable="True" Text="Einheit der Masse">
+                <ComboBoxItem Content="e" />
+                <ComboBoxItem Content="u" />
+                <ComboBoxItem Content="c" />
+            </ComboBox>
+            <ComboBox Grid.Column="2" Grid.Row="3" Height="23" HorizontalAlignment="Left" Name="einheitdichte" VerticalAlignment="Top" Width="169" Text="Einheit der Dichte" IsEditable="True">
+                <ComboBoxItem Content="g/cm³" />
+                <ComboBoxItem Content="kg/cm³" />
+                <ComboBoxItem Content="g/m³" />
+                <ComboBoxItem Content="kg/m³" />
+            </ComboBox>
+            <ComboBox Grid.Column="2" Grid.Row="4" Height="23" HorizontalAlignment="Left" Name="einheitschmelzpkt" VerticalAlignment="Top" Width="169" IsEditable="True" Text="Einheit des Schmelzpunkts">
+                <ComboBoxItem Content="°K" />
+                <ComboBoxItem Content="°C" />
+                <ComboBoxItem Content="°F" />
+                <ComboBoxItem Content="C" />
+                <ComboBoxItem Content="F" />
+                <ComboBoxItem Content="K" />
+            </ComboBox>
+            <ComboBox Grid.Column="2" Grid.Row="5" Height="23" HorizontalAlignment="Left" Name="einheitsiedepkt" VerticalAlignment="Top" Width="169" IsEditable="True" Text="Einheit des Siedepunkts">
+                <ComboBoxItem Content="°K" />
+                <ComboBoxItem Content="°C" />
+                <ComboBoxItem Content="°F" />
+                <ComboBoxItem Content="C" />
+                <ComboBoxItem Content="F" />
+                <ComboBoxItem Content="K" />
+            </ComboBox>
+            <Image Grid.Column="3" Height="24" HorizontalAlignment="Left" Name="imgelementsymbol" Stretch="Fill" VerticalAlignment="Top" Width="24" />
+            <Image Grid.Column="3" Height="24" HorizontalAlignment="Left" Name="imgordnungszahl" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Row="1" />
+            <Image Grid.Column="3" Height="24" HorizontalAlignment="Left" Name="imgmassezahl" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Row="2" />
+            <Image Grid.Column="3" Height="24" HorizontalAlignment="Left" Name="imgdichte" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Row="3" />
+            <Image Grid.Column="3" Height="24" HorizontalAlignment="Left" Name="imgschmelzpkt" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Row="4" />
+            <Image Grid.Column="3" Height="24" HorizontalAlignment="Left" Name="imgsiedepkt" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Row="5" />
+            <CheckBox Grid.Row="7" Height="24" HorizontalAlignment="Left" Name="giftig" VerticalAlignment="Top" Width="77" Content="Giftig?" IsChecked="{x:Null}" />
+            <CheckBox Grid.Row="8" Height="24" HorizontalAlignment="Left" Name="radioaktiv" VerticalAlignment="Top" Width="88" Content="Radioaktiv?" IsChecked="{x:Null}" Grid.ColumnSpan="2" />
+            <CheckBox Grid.Row="9" Height="24" HorizontalAlignment="Left" Name="ätzend" VerticalAlignment="Top" Width="77" Content="Ätzend?" IsChecked="{x:Null}" />
+            <CheckBox Grid.Row="10" Height="24" HorizontalAlignment="Left" Name="entzündlich" VerticalAlignment="Top" Width="88" Content="Entzündlich?" IsChecked="{x:Null}" Grid.ColumnSpan="2" />
+            <CheckBox Grid.Row="11" Height="24" HorizontalAlignment="Left" Name="reizend" VerticalAlignment="Top" Width="77" Content="Reizend?" IsChecked="{x:Null}" />
+            <Image Grid.Row="7" Height="24" HorizontalAlignment="Left" Name="imggiftig" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Column="1" Margin="10,0,0,0" />
+            <Image Grid.Row="8" HorizontalAlignment="Left" Name="imgradioaktiv" Stretch="Fill" Width="24" Grid.Column="1" Margin="10,0,0,0" />
+            <Image Grid.Row="9" Height="24" HorizontalAlignment="Left" Name="imgätzend" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Column="1" Margin="10,0,0,0" />
+            <Image Grid.Row="10" Height="24" HorizontalAlignment="Left" Name="imgentzündlich" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Column="1" Margin="10,0,0,0" />
+            <Image Grid.Row="11" Height="24" HorizontalAlignment="Left" Name="imgreizend" Stretch="Fill" VerticalAlignment="Top" Width="24" Grid.Column="1" Margin="10,0,0,0" />
+            <Image Grid.Column="2" Grid.RowSpan="3" HorizontalAlignment="Left" Name="Allesrichtig" Stretch="Fill" Width="64" Grid.Row="8" Margin="58,0,0,10" />
+            <Button Command="{x:Static local:Commands.Check}" Content="Überprüfen" Grid.Column="2" Grid.Row="11" Margin="94,0,0,0" Name="Check" IsEnabled="True" IsDefault="True" />
+            <Button Content="Lösung" Grid.Column="2" Grid.Row="11" Height="23" HorizontalAlignment="Left" Margin="0,0,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" IsEnabled="True" />
+        </Grid>
+    </Grid>
+</Page>

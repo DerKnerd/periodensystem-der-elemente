@@ -1,0 +1,144 @@
+﻿<Page x:Class="Periodensystem_der_Elemente_2.Pages.Übungen_nach_Symbol"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+      Height="453" Width="1021" Title="Übung nach Symbol">
+    <UniformGrid>
+        <UniformGrid.Resources>
+            <Style TargetType="{x:Type Hyperlink}">
+                <Setter Property="Foreground" Value="#FF6A00"/>
+                <Setter Property="FontSize" Value="36"/>
+                <EventSetter Event="Click" Handler="Hyperlink_Click" HandledEventsToo="True"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="true">
+                        <Setter Property="Foreground" Value="#808080"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+        </UniformGrid.Resources>
+        <TextBlock Name="textBlock1"><Hyperlink>Ac</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock2"><Hyperlink>Ag</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock3"><Hyperlink>Al</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock4"><Hyperlink>Am</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock5"><Hyperlink>Ar</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock6"><Hyperlink>As</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock7"><Hyperlink>At</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock8"><Hyperlink>Au</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock9"><Hyperlink>B</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock10"><Hyperlink>Ba</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock11"><Hyperlink>Be</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock12"><Hyperlink>Bi</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock13"><Hyperlink>Bk</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock14"><Hyperlink>Br</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock15"><Hyperlink>C</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock16"><Hyperlink>Ca</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock17"><Hyperlink>Cd</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock18"><Hyperlink>Ce</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock19"><Hyperlink>Cf</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock20"><Hyperlink>Cl</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock21"><Hyperlink>Cm</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock22"><Hyperlink>Co</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock23"><Hyperlink>Cr</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock24"><Hyperlink>Cs</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock25"><Hyperlink>Cu</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock26"><Hyperlink>Dy</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock27"><Hyperlink>Er</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock28"><Hyperlink>Eu</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock29"><Hyperlink>F</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock30"><Hyperlink>Fe</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock31"><Hyperlink>Fr</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock32"><Hyperlink>Ga</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock33"><Hyperlink>Gd</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock34"><Hyperlink>Ge</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock35"><Hyperlink>H</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock36"><Hyperlink>He</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock37"><Hyperlink>Hf</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock38"><Hyperlink>Hg</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock39"><Hyperlink>Ho</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock40"><Hyperlink>I</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock41"><Hyperlink>In</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock42"><Hyperlink>Ir</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock43"><Hyperlink>K</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock44"><Hyperlink>Kr</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock45"><Hyperlink>La</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock46"><Hyperlink>Li</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock47"><Hyperlink>Lu</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock48"><Hyperlink>Mg</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock49"><Hyperlink>Mn</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock50"><Hyperlink>Mo</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock51"><Hyperlink>N</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock52"><Hyperlink>Na</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock53"><Hyperlink>Nb</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock54"><Hyperlink>Nd</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock55"><Hyperlink>Ne</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock56"><Hyperlink>Ni</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock57"><Hyperlink>Np</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock58"><Hyperlink>O</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock59"><Hyperlink>Os</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock60"><Hyperlink>P</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock61"><Hyperlink>Pa</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock62"><Hyperlink>Pb</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock63"><Hyperlink>Pd</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock64"><Hyperlink>Pm</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock65"><Hyperlink>Po</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock66"><Hyperlink>Pr</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock67"><Hyperlink>Pt</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock68"><Hyperlink>Pu</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock69"><Hyperlink>Ra</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock70"><Hyperlink>Rb</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock71"><Hyperlink>Re</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock72"><Hyperlink>Rh</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock73"><Hyperlink>Rn</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock74"><Hyperlink>Ru</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock75"><Hyperlink>S</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock76"><Hyperlink>Sb</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock77"><Hyperlink>Sc</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock78"><Hyperlink>Se</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock79"><Hyperlink>Si</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock80"><Hyperlink>Sm</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock81"><Hyperlink>Sn</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock82"><Hyperlink>Sr</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock83"><Hyperlink>Ta</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock84"><Hyperlink>Tb</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock85"><Hyperlink>Tc</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock86"><Hyperlink>Te</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock87"><Hyperlink>Th</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock88"><Hyperlink>Ti</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock89"><Hyperlink>Tl</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock90"><Hyperlink>Tm</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock91"><Hyperlink>U</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock92"><Hyperlink>V</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock93"><Hyperlink>W</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock94"><Hyperlink>Xe</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock95"><Hyperlink>Y</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock96"><Hyperlink>Yb</Hyperlink></TextBlock>
+
+        <TextBlock Name="textBlock97"><Hyperlink>Zn</Hyperlink></TextBlock>
+        <TextBlock Name="textBlock98"><Hyperlink>Zr</Hyperlink></TextBlock>
+    </UniformGrid>
+    </Page>

@@ -1,0 +1,75 @@
+﻿<Page x:Class="Periodensystem_der_Elemente_2.Pages.Periodensystem_nach_Gruppe"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" Height="453" Width="1021" Title="Periodensystem nach Gruppe">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="52*" />
+            <RowDefinition Height="401*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="294*" />
+            <ColumnDefinition Width="329*" />
+            <ColumnDefinition Width="314*" />
+        </Grid.ColumnDefinitions>
+        <ListBox Height="401" Name="listBox1" VerticalAlignment="Top" FontSize="18" Grid.Row="1" BorderBrush="{x:Null}" Background="{x:Null}">
+            <ListBoxItem Content="1. Hauptgruppe" Selected="erstehg_Selected" />
+            <ListBoxItem Content="2. Hauptgruppe" Selected="zweitehg_Selected" />
+            <Separator/>
+            <ListBoxItem Content="3. Nebengruppe" Selected="dritteng_Selected" />
+            <Separator/>
+            <ListBoxItem Content="Lanthanoide" Selected="lanthanoide_Selected" />
+            <ListBoxItem Content="Actinoide" Selected="actinoide_Selected" />
+            <Separator/>
+            <ListBoxItem Content="4. Nebengruppe" Selected="vierteng_Selected" />
+            <ListBoxItem Content="5. Nebengruppe" Selected="fünfteng_Selected" />
+            <ListBoxItem Content="6. Nebengruppe" Selected="sechsteng_Selected" />
+            <ListBoxItem Content="7. Nebengruppe" Selected="siebteng_Selected" />
+            <ListBoxItem Content="8. Nebengruppe" Selected="achteng_Selected" />
+            <ListBoxItem Content="1. Nebengruppe" Selected="ersteng_Selected" />
+            <ListBoxItem Content="2. Nebengruppe" Selected="zweiteng_Selected" />
+            <Separator/>
+            <ListBoxItem Content="3. Hauptgruppe" Selected="drittehg_Selected" />
+            <ListBoxItem Content="5. Hauptgruppe" Selected="fünftehg_Selected" />
+            <ListBoxItem Content="6. Hauptgruppe" Selected="sechstehg_Selected" />
+            <ListBoxItem Content="7. Hauptgruppe" Selected="siebtehg_Selected" />
+            <ListBoxItem Content="8. Hauptgruppe" Selected="achtehg_Selected" />
+        </ListBox>
+        <ListBox Height="401" Margin="10,0,0,0" Name="listBox2" FontSize="18" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Background="{x:Null}" SelectionChanged="listBox2_SelectionChanged" />
+        <GridSplitter Grid.Column="1" Height="453" HorizontalAlignment="Left" Name="gridSplitter1" VerticalAlignment="Top" Width="10" ShowsPreview="True" IsEnabled="False" Grid.RowSpan="2" />
+        <GridSplitter Grid.Column="2" Height="453" HorizontalAlignment="Left" Name="gridSplitter2" VerticalAlignment="Top" Width="10" ResizeBehavior="PreviousAndCurrent" ShowsPreview="True" IsEnabled="False" Grid.RowSpan="2" />
+        <TextBlock Height="52" HorizontalAlignment="Left" Name="textBlock1" Text="Gruppe" VerticalAlignment="Top" Width="320" FontSize="35" FontFamily="Tahoma" />
+        <TextBlock Grid.Column="1" Height="52" HorizontalAlignment="Left" Margin="10,0,0,0" Name="textBlock2" Text="Element" VerticalAlignment="Top" Width="348" FontSize="35" />
+        <TextBlock Grid.Column="2" Height="52" HorizontalAlignment="Left" Margin="10,0,0,0" Name="textBlock3" Text="Eigenschaft" VerticalAlignment="Top" Width="332" FontSize="35" FontFamily="Tahoma" />
+        <Grid Grid.Column="2" Grid.Row="1" Height="401" HorizontalAlignment="Left" Margin="10,0,0,0" Name="grid1" VerticalAlignment="Top" Width="332">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="31" />
+                <RowDefinition Height="371*" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="" Margin="0,130,0,161" FontSize="55" TextAlignment="Center" Grid.Row="1" Name="Eigenschaft" />
+        </Grid>
+        <Expander Grid.Row="1" Height="274" Margin="10,0,0,0" Name="expander1" VerticalAlignment="Top" Grid.Column="2">
+            <Expander.Header>
+                <TextBlock FontSize="18" Text="Auswahl" Name="header" />
+            </Expander.Header>
+            <Grid>
+                <ListBox HorizontalAlignment="Left" Width="331" FontSize="18">
+                    <ListBoxItem Content="Symbol" Selected="symbol_Selected"  />
+                    <ListBoxItem Content="Ordnungszahl" Selected="ordnungszahl_Selected" />
+                    <ListBoxItem Content="Massezahl" Selected="massezahl_Selected" />
+                    <ListBoxItem Content="Dichte" Selected="dichte_Selected" />
+                    <ListBoxItem Content="Schmelztemperatur" Selected="schmelzpunkt_Selected" />
+                    <ListBoxItem Content="Siedetemperatur" Selected="siedepunkt_Selected" />
+                    <Separator/>
+                    <ListBoxItem Content="giftig" Selected="giftig_Selected" />
+                    <ListBoxItem Content="radioaktiv" Selected="radioaktiv_Selected" />
+                    <ListBoxItem Content="ätzend" Selected="ätzend_Selected" />
+                    <ListBoxItem Content="entzündlich" Selected="entzündlich_Selected" />
+                    <ListBoxItem Content="reizend" Selected="reizend_Selected" />
+                </ListBox>
+            </Grid>
+        </Expander>
+    </Grid>
+</Page>

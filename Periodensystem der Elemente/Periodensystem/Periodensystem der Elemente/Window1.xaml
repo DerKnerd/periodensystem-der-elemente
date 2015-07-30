@@ -1,0 +1,59 @@
+﻿<Window x:Class="Periodensystem_der_Elemente.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Periodensystem der Elemente" Background="Transparent" AllowsTransparency="True" MaxHeight="1024" Height="563" Width="1200" WindowStyle="None" Icon="Bilder\Icon.png" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Border Name="außen" Background="White" BorderBrush="OrangeRed" BorderThickness="7,25,7,7" CornerRadius="15,15,5,5" >
+        <Grid>
+            <ToolBarTray ToolBarTray.IsLocked="True" VerticalAlignment="Top" Height="28">
+                <ToolBar>
+                    <RadioButton ToolBar.OverflowMode="Never" Content="Periodensystemübersicht" IsChecked="True" Name="Pse" Click="pse_Click" Cursor="Hand" />
+                    <Separator/>
+                    <RadioButton Click="übung_Click" Content="Übungen mit Periodensystem"  Name="ÜbungenmitPse" Cursor="Hand" />
+                </ToolBar>
+                <ToolBar>
+                    <Button Name="musik" Content="Hintergrundmusik auswählen" Click="musik_Click" Cursor="Hand" />
+                    <ToggleButton Name="bgmusik" Content="Musik?" Checked="bgmusik_Checked" IsChecked="False" Unchecked="bgmusik_Unchecked" Cursor="Hand" />
+                </ToolBar>
+                <ToolBar Name="musikmenu" Visibility="Collapsed">
+                    <RadioButton Name="play" Content="Play" Checked="play_Checked" Cursor="ArrowCD" />
+                    <RadioButton Name="stop" Content="Stop" Checked="stop_Checked" Cursor="ArrowCD" />
+                    <RadioButton Name="pause" Content="Pause" Checked="pause_Checked" Cursor="ArrowCD" />
+                    <ToggleButton Name="repeat" Content="Repeat"/>
+                    <ToggleButton Name="ton" Content="Tonoptionen" Checked="ton_Checked" Unchecked="ton_Unchecked" Cursor="ArrowCD"/>
+                </ToolBar>
+                <ToolBar>
+                    <Button Click="überdieanwendung" Name="Infos" Content="Über die Anwendung" Cursor="Hand" />
+                    <Separator/>
+                    <Button Name="minimieren" Click="minimieren_Click" Cursor="Hand">
+                        <TextBlock>
+                            <InlineUIContainer>
+                                <Image Source="Minimieren.png"/>
+                            </InlineUIContainer>
+                            <Run>Minimieren</Run>
+                        </TextBlock> 
+                    </Button>
+                    <Button Name="exit" Click="exit_Click" Cursor="Hand">
+                        <TextBlock>
+                            <InlineUIContainer>
+                                <Image Source="Schließen.png"/>
+                            </InlineUIContainer>
+                            <Run>Schließen</Run>
+                        </TextBlock>
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
+            <TextBlock FontFamily="Georgia" FontSize="20" Text="Periodensystem" Height="25" Name="textBlock1" Margin="0,28,0,0" VerticalAlignment="Top"/>
+            <Frame Margin="0,51,0,0" Name="Ansichtsframe" Source="Periodensystem.xaml" NavigationUIVisibility="Hidden" Height="465" VerticalAlignment="Top" />
+            <Rectangle MouseLeftButtonDown="Window_MouseDown" Height="25" Margin="-7,-25,-7,0" Name="rectangle1" Stroke="Transparent" Fill="Transparent" VerticalAlignment="Top" MouseUp="rectangle1_MouseUp" />
+            <Image Source="Bilder\Logo lang.png" Margin="7,-25,0,0" Name="image1" Stretch="Fill" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+            <ToolBarTray ToolBarTray.IsLocked="True" Margin="545,27,382,0" Name="lautstärke" Visibility="Collapsed" Height="26" VerticalAlignment="Top">
+                <ToolBar>
+                    <Button Content="Lauter" Click="Lauter_Click"/>
+                    <Button Content="Leiser" Click="Leiser_Click"/>
+                    <Slider Value="1"  Name="sli" Maximum="1" Minimum="0" Width="100" ValueChanged="Slider_ValueChanged" />
+                    <ToggleButton Content="Stumm" Checked="Stumm_Checked" Unchecked="Stumm_Unchecked"/>
+                </ToolBar>
+            </ToolBarTray>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,147 @@
+﻿<Page x:Class="Periodensystem_der_Elemente_2.Pages.Übung_nach_Name"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+      Height="453" Width="1021" Title="Periodensystem nach Symbol">
+    <UniformGrid>
+        <UniformGrid.Resources>
+            <Style TargetType="{x:Type Hyperlink}">
+                <Setter Property="Foreground" Value="#FF6A00"/>
+                <Setter Property="FontSize" Value="17"/>
+                <EventSetter Event="Click" Handler="Hyperlink_Click" HandledEventsToo="True"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="true">
+                        <Setter Property="Foreground" Value="#808080"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+        </UniformGrid.Resources>
+        <TextBlock><Hyperlink>Actinium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Aluminium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Americum</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Antimon</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Argon</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Arsen</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Astat</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Barium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Berkelium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Beryllium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Bismut</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Blei</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Bor</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Brom</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Cadmium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Caesium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Calcium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Californium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Cer</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Chlor</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Chrom</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Cobalt</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Curium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Dysprosium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Eisen</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Erbium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Europium</Hyperlink></TextBlock>
+
+
+        <TextBlock><Hyperlink>Flour</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Francium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Gadolinium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Gallium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Germanium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Gold</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Hafnium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Helium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Holmium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Indium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Iod</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Iridium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Kalium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Kohlenstoff</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Krypton</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Kupfer</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Lanthan</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Lithium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Lutetium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Magnesium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Mangan</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Molybdän</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Natrium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Neodym</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Neon</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Neptunium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Nickel</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Niob</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Osmium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Palladium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Phosphor</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Platin</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Plutonium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Polonium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Praseodym</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Promethium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Protactinium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Quecksilber</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Radium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Radon</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Rhenium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Rhodium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Rubidium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Ruthenium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Samarium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Sauerstoff</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Scandium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Schwefel</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Selen</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Silber</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Silicium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Stickstoff</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Strontium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Tantal</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Technetium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Tellur</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Terbium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Thallium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Thorium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Thulium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Titan</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Uran</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Vanadium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Wasserstoff</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Wolfram</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Xenon</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Ytterbium</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Yttrium</Hyperlink></TextBlock>
+
+        <TextBlock><Hyperlink>Zink</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Zinn</Hyperlink></TextBlock>
+        <TextBlock><Hyperlink>Zirkonium</Hyperlink></TextBlock>
+    </UniformGrid>
+</Page>
